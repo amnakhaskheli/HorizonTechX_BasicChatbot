@@ -5,12 +5,12 @@ print("      Welcome to PyChat!")
 print("================================")
 print("Bot: Hello! I am your Python chatbot.")
 print("Bot: You can talk to me about studies, hobbies, and more.")
-print("Bot: Type 'bye' to exit.\n")
+print("Bot: Type 'bye' or 'q' to exit.\n")
 
 while True:
     message = input("You: ").lower().strip()
 
-    if message == "bye":
+    if message in ("bye", "q"):
         print("Bot: Goodbye! Have a great day!")
         break
 
